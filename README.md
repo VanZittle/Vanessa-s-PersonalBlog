@@ -1,6 +1,6 @@
 # module4challenge-Vanessa-s-PersonalBlog
 
-This is a website where anyone can create posts and share what they think. Users need to fill out the main form and next they will see their post. It has included a switch to turn on/off the original bright colors used.
+This is a website where anyone can create posts and share what they think. Users need to fill out the main form and next they will see their post. It has included a switch to turn on/off the original bright colors used. To develop this challenge, I reached out to external sources such as W3Schools for the toggle button and internals being previous activities during the course.
 
 ## User story
 

@@ -20,14 +20,6 @@ h1{
     font-size: 30px;
 }
 
-h2 {
-
-}
-
-p{
-
-}
-
 nav{
     background-color: var(--color5);
     color: var(--light);
@@ -58,6 +50,10 @@ nav{
 .off-color .custom-btn{
   background-color: var(--color7);
 }
+.off-color .card{
+  color: var(--dark);
+}
+/*styles for the form section starts here*/
 .inputs{
     color: var(--light);
 }
