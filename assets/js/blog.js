@@ -43,7 +43,7 @@ init();
 
 // Start code to switch to black and white mode
 
-function myFunction() {
+function offColor() {
   var element = document.body;
-  element.classList.toggle("dark-mode");
+  element.classList.toggle("off-color");
 }

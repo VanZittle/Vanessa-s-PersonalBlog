@@ -6,6 +6,9 @@
     --color3: #F29544;
     --color4: #F24B88;
     --color5: #D93D3D;
+    --color6: rgb(62, 62, 62);
+    --color7: gray;
+
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -46,8 +49,14 @@ nav{
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='gray'/%3e%3c/svg%3e");
 }
 .off-color{
-    color: var(--light);
-    background-color: var(--dark);
+  color: var(--light);
+  background-color: var(--dark);
+}
+.off-color nav, .off-color footer, .off-color .css-span:hover::after, .off-color .custom-btn:hover{
+  background-color: var(--color6);
+}
+.off-color .custom-btn{
+  background-color: var(--color7);
 }
 .inputs{
     color: var(--light);
