@@ -32,6 +32,7 @@ saveButton.addEventListener('click', function (event) {
   event.preventDefault();
   saveLastPost();
   renderLastPost();
+  
 });
 
 // The init() function fires when the page is loaded
