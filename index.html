@@ -57,7 +57,7 @@
                 <div class="mb-3">
                   <input
                     type="text"
-                    id="user-names"
+                    id="username-input"
                     placeholder="Enter your username"
                     class="form-control"
                   />
@@ -65,7 +65,7 @@
                 <div class="mb-3">
                     <input
                     type="text"
-                    id="title-text"
+                    id="title-input"
                     placeholder="Give it a title"
                     class="form-control"
                   />
@@ -73,12 +73,12 @@
                 <div class="mb-3">
                     <textarea
                       name="comments"
-                      id="content-text"
+                      id="comment-input"
                       placeholder="Add your idea"
                       class="form-control"
                     ></textarea>
                   </div>
-                <button id="save" class="btn custom-btn col-5 text-uppercase"><b>Post it!</b></button>
+                <button class="btn custom-btn col-5 text-uppercase"><b>Post it!</b></button>
               </form>
             </div>
           </div>
@@ -87,11 +87,7 @@
     <!-- Posts will be displayed here -->
     <main class="container my-3">
       <div class="row" id="posts-display">
-        <div class="card col-12 col-sm-4 col-md-3">
-          <p>User: <span id="saved-username"></span></p>
-          <p>Title: <span id="saved-title"></span></p>
-          <p>Content: <span id="saved-content"></span></p>
-        </div>
+        
       </div>
     </main>
     <!-- Posts section ends here -->
@@ -105,7 +101,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/js/blog.js"></script>    
+    <script src="./assets/js/blog.js"></script>    
     <script src="assets/js/form.js"></script>    
     <script src="assets/js/logic.js"></script>    
 </body>
