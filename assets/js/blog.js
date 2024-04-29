@@ -2,19 +2,19 @@ const formEl = $('#post-form');
 const usernameInputEl = $('#username-input');
 const titleInputEl = $('#title-input');
 const commentInputEl = $('#comment-input');
-const guestBookDisplayEl = $('#posts-display');
+const postsDisplayEl = $('#posts-display');
 
-const printGuestData = function (username, title, comment) {
+const printPostData = function (username, title, comment) {
 
-  let guestEntries= JSON.parse(localStorage.getItem('guestEntries')) || [];
+  let postEntries= JSON.parse(localStorage.getItem('postEntries')) || [];
   
   // add new data
-  guestEntries.push ({username, title, comment});
+  postEntries.push ({username, title, comment});
   // save the update in local storage
-  localStorage.setItem('guestEntries',JSON.stringify(guestEntries));
+  localStorage.setItem('postEntries',JSON.stringify(postEntries));
 
   const cardColumnEl = $('<div>');
-  cardColumnEl.addClass('col-12 col-md-4');
+  cardColumnEl.addClass('col-12 col-md-4 mb-4');
 
   const cardEl = $('<div>');
   // add a class of .custom-card
@@ -35,7 +35,7 @@ const printGuestData = function (username, title, comment) {
   const cardComment = $('<p>').addClass('card-text').text(comment);
   cardComment.appendTo(cardBodyEl);
 
-  guestBookDisplayEl.append(cardColumnEl);
+  postsDisplayEl.append(cardColumnEl);
 };
 
 const handleFormSubmit = function (event) {
@@ -46,11 +46,11 @@ const handleFormSubmit = function (event) {
   const commentInput = commentInputEl.val();
 
   if (!usernameInput || !titleInput || !commentInput) {
-    console.log('Fill out all inputs in the form, please');
+    alert('Fill out all inputs in the form, please');
     return;
   }
 
-  printGuestData(usernameInput, titleInput, commentInput);
+  printPostData(usernameInput, titleInput, commentInput);
 
   // reset form
   usernameInputEl.val('');
