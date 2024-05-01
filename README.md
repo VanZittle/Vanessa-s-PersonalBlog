@@ -39,6 +39,8 @@ THEN I am presented with a link to my portfolio.
 To visit and review my project, [click here](https://vanzittle.github.io/module4-challenge-Vanessa-PersonalBlog/)
 
 ## Visual reference of project
-Up next, there will be an image demonstrating the app's appearance here.
+The following image demonstrates the app's appearance:
+
+![This app can be run in the browser and features dynamically updated HTML and CSS powered by JavaScript (started from scratch by me, and ended up thanks to my tutor, Katie :D )](./Assets/images/challenge_appReference.gif)
 
 ![](./Assets/challenge_appReference.gif)
